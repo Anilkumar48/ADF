@@ -20,7 +20,7 @@ resource "azurerm_subnet" "example1" {
   virtual_network_name = azurerm_virtual_network.example.name
   address_prefixes     = ["10.1.0.0/26"]
 }
-resource "azurerm_subnet" "example" {
+resource "azurerm_subnet" "example" {  
   name                 = "${var.windows_virtual_machine}-sub-1"
   resource_group_name  = azurerm_resource_group.example.name
   virtual_network_name = azurerm_virtual_network.example.name
